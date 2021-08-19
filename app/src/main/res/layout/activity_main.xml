@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_margin="15sp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Masukan Dua Angka"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_margin="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/angka_pertama"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Masukan Angka Pertama"
+        android:layout_below="@id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+    <EditText
+        android:layout_margin="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/angka_kedua"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Masukan Angka Kedua"
+        android:layout_below="@id/angka_pertama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+
+    <Button
+        android:layout_alignParentStart="true"
+        android:id="@+id/tambah"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka_kedua"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:text="+"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="30sp"
+        android:id="@+id/kurang"
+        android:layout_toRightOf="@+id/tambah"
+        android:layout_below="@id/angka_kedua"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="15sp"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="30sp"
+        android:id="@+id/kali"
+        android:layout_toRightOf="@+id/kurang"
+        android:layout_below="@id/angka_kedua"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="15sp"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="30sp"
+        android:id="@+id/bagi"
+        android:layout_toRightOf="@+id/kali"
+        android:layout_below="@id/angka_kedua"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginLeft="15sp"/>
+
+    <Button
+        android:layout_margin="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClear"
+        android:text="CLEAR"
+        android:textSize="20sp"
+        android:layout_below="@id/kali"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/txtResult"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:layout_below="@+id/btnClear"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="15sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/answer"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
